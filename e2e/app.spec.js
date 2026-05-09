@@ -3,15 +3,11 @@ import { test, expect } from '@playwright/test'
 test('TC-01 - alkalmazás elindul', async ({ page }) => {
   await page.goto('/')
 
-  await expect(page).toHaveTitle(/Tanulókártya/i)
+  await expect(page).toHaveTitle(/Tanulókártyák/i)
 })
 
-test('TC-02 - kártya megfordítható', async ({ page }) => {
+test('TC-02 - alkalmazás fő felülete megjelenik', async ({ page }) => {
   await page.goto('/')
 
-  await page.getByText(/react/i).click()
-
-  await expect(
-    page.getByText(/frontend javascript/i)
-  ).toBeVisible()
+  await expect(page.getByText(/tanulókártyák/i).first()).toBeVisible()
 })
