@@ -34,6 +34,14 @@ npm run build
 
 A `dist/` mappa tartalmazza a kész alkalmazást, amely bármely statikus hosting szolgáltatásra feltölthető (GitHub Pages, Vercel, Netlify).
 
+## Tesztelés
+
+A tesztelés felépítése az alábbi logika mentén lett végrehajtva:
+1. Tesztterv
+2. Tesztesetek
+3. Automatizált tesztek
+4. Tesztösszegzés / jegyzőkönyv
+
 ## Csapat
 
 | Név | Szerep |
